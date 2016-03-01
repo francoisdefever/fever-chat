@@ -1,1 +1,7 @@
 /* CSS declarations go here */
+body {
+	font-family: Raleway, sans-serif;
+	font-size: 1.3em;
+	background-color: #27ae60;
+	color: #ecf0f1;
+}
