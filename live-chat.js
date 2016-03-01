@@ -10,6 +10,7 @@ if (Meteor.isClient) {
   Template.messages.events({
     'keypress textarea': function(e, instance) {
       if (e.keyCode == 13) { //enter key pressed
+        e.preventDefault();
         var value = instance.find('textarea').value;
         instance.find('textarea').value = '';
 
