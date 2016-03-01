@@ -25,6 +25,10 @@ if (Meteor.isClient) {
   Template.message.helpers({
     user: function() {
       return Meteor.users.findOne({_id: this.user});
+    },
+
+    time: function() {
+      return moment(this.timestamp).format('h:mm a');
     }
   });
 
