@@ -17,10 +17,14 @@ if (Meteor.isClient) {
           message: value,
           timestamp: new Date (),
           // user: Meteor.userId()
-        })
+        });
       }
     }
-  })
+  });
+
+  Accounts.ui.config({
+    passwordSignupFields: "USERNAME_AND_OPTIONAL_EMAIL"
+  });
 }
 
 if (Meteor.isServer) {
